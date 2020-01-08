@@ -1,6 +1,8 @@
 import psutil
-import build_txt
+from monitoring import build_txt
 import json
+import os
+
 def monitoring(interval, type):
     result = {}
     result['cpu'] = psutil.cpu_times_percent(interval)._asdict()
@@ -17,8 +19,9 @@ def monitoring(interval, type):
     if type == 'json':
         with open('data.json', 'w') as outfile:
             json.dump(result, outfile)
+        print('Export in {}\\data.json'.format(os.path.abspath(os.curdir)))
     elif type == 'txt':
         with open('data.txt', 'w') as outfile:
             outfile.write(build_txt.tree(result))
+        print('Export in {}\\data.txt'.format(os.path.abspath(os.curdir)))
     return result
-monitoring(1, 'json')
