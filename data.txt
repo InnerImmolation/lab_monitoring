@@ -1,0 +1,54 @@
+Cpu: 
+	User:1.7
+	System:2.7
+	Idle:95.2
+	Interrupt:0.4
+	Dpc:0.0
+Mem_usage: 
+	Total:31.4G
+	Used:15.7G
+	Free:15.7G
+	Percent:50.0
+	Sin:0B
+	Sout:0B
+Virtual_mem_usage: 
+	Total:15.4G
+	Available:952.5M
+	Percent:94.0
+	Used:14.5G
+	Free:952.5M
+Disk i/o: 
+	Read_count:5.0M
+	Write_count:4.5M
+	Read_bytes:120.3G
+	Write_bytes:177.9G
+	Read_time:4.9K
+	Write_time:4.7K
+Network io stats: 
+	Bytes_sent:37.1M
+	Bytes_recv:209.9M
+	Packets_sent:107.6K
+	Packets_recv:292.9K
+	Errin:0B
+	Errout:0B
+	Dropin:0B
+	Dropout:0B
+Network interfaces: 
+Virtualbox host-only network: 
+	Family:AddressFamily.AF_INET6B
+	Address:fe80::fc40:ecca:1267:6c3e
+	Netmask:None
+	Broadcast:None
+	Ptp:None
+Ethernet: 
+	Family:AddressFamily.AF_INET6B
+	Address:fe80::a049:9a63:3ab8:9966
+	Netmask:None
+	Broadcast:None
+	Ptp:None
+Loopback pseudo-interface 1: 
+	Family:AddressFamily.AF_INET6B
+	Address:::1
+	Netmask:None
+	Broadcast:None
+	Ptp:None
