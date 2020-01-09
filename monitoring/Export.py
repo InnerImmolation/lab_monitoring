@@ -1,6 +1,6 @@
-from monitoring.Monitoring import Monitoring
 import os
 import json
+from monitoring.Monitoring import Monitoring
 
 
 class Export(Monitoring):
@@ -10,7 +10,7 @@ class Export(Monitoring):
     def exportResult(self):
         if self.type == 'json':
             with open('data.json', 'w') as outfile:
-                json.dump(self.getResult(), outfile)
+                json.dump(self.getResult, outfile)
             print('Export in {}\\data.json'.format(os.path.abspath(os.curdir)))
         elif self.type == 'txt':
             with open('data.txt', 'w') as outfile:
